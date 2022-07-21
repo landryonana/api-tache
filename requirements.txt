@@ -12,6 +12,7 @@ django-import-export==2.7.1
 djangorestframework==3.13.1
 et-xmlfile==1.1.0
 idna==3.3
+gunicorn==19.0.0
 MarkupPy==1.14
 mock==4.0.3
 odfpy==1.4.1
