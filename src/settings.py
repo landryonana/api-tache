@@ -13,7 +13,7 @@ SECRET_KEY = 'd4dfv$$v$i8ga_gp@kofst)0=ia^i55iv6=g+=9kts&xcan_47'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['*']
 
 
 # Application definition
@@ -71,20 +71,20 @@ WSGI_APPLICATION = 'src.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/2.2/ref/settings/#databases
 
-DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
-    }
-}
+# DATABASES = {
+#     'default': {
+#         'ENGINE': 'django.db.backends.sqlite3',
+#         'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+#     }
+# }
 
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME': 'dcmnal3rrj9ljd',
-        'USER': 'fryceublhojexu',
-        'PASSWORD': '3a11078bd33b1a39c9eaef423f38ee6a568c4bdda29b928728bc95ab4e785a73',
-        'HOST': 'ec2-176-34-105-15.eu-west-1.compute.amazonaws.com',
+        'NAME': 'deniidkt3g7r8q',
+        'USER': 'ewmgattkswioto',
+        'PASSWORD': 'b47f14961b6fe9f44699f76bac93823ec433d0bac414cc529722f4ad37569b77',
+        'HOST': 'ec2-3-248-121-12.eu-west-1.compute.amazonaws.com',
         'POST': '5432',
     }
 }
@@ -112,7 +112,7 @@ AUTH_PASSWORD_VALIDATORS = [
 # Internationalization
 # https://docs.djangoproject.com/en/2.2/topics/i18n/
 
-LANGUAGE_CODE = 'en-us'
+LANGUAGE_CODE = 'fr-fr'
 
 TIME_ZONE = 'UTC'
 
@@ -158,6 +158,7 @@ CLOUDINARY_STORAGE = {
     'API_KEY': '259285251143441',
     'API_SECRET': 'aJvmF3SsffpBJFzVUcF8Bi6JPuM'
 }
+
 DEFAULT_FILE_STORAGE = 'cloudinary_storage.storage.MediaCloudinaryStorage'
 
 
