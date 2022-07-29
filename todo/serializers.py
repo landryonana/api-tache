@@ -8,10 +8,10 @@ from todo.models import Tache, Category
 class CategorySerializer(serializers.ModelSerializer):
     class Meta:
         model = Category
-        fields = '__all__'
+        fields = ['url', 'name', 'slug', 'description', 'complet', 'color', 'image', 'archived', 'taches', 'created', 'updated']
 
 
 class TacheSerializer(serializers.ModelSerializer):
     class Meta:
         model = Tache
-        fields = '__all__'
+        fields = ['url', 'name', 'slug', 'description', 'complet', 'color', 'image', 'archived', 'category', 'created', 'updated']
