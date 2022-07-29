@@ -14,4 +14,4 @@ class CategorySerializer(serializers.ModelSerializer):
 class TacheSerializer(serializers.ModelSerializer):
     class Meta:
         model = Tache
-        fields = ['url', 'name', 'slug', 'description', 'complet', 'color', 'image', 'archived', 'category', 'created', 'updated']
+        fields = ['url', 'name', 'slug', 'description', 'complet', 'color', 'category', 'created', 'updated']
