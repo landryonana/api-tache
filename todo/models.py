@@ -13,8 +13,8 @@ class Category(models.Model):
     color = models.CharField(max_length=20, null=True, blank=True)
     image = models.ImageField(upload_to='category/%Y/%m/%d', blank=True)
     archived = models.BooleanField(default=False)
-    created = models.DateTimeField(auto_now_add=True)
-    updated = models.DateTimeField(auto_now=True)
+    created = models.DateTimeField(auto_now_add=True, null=True, blank=True)
+    updated = models.DateTimeField(auto_now=True, null=True, blank=True)
     
     
     class Meta:
@@ -40,8 +40,8 @@ class Tache(models.Model):
     description = models.TextField(null=True, blank=True)
     complet = models.BooleanField(default=False)
     color = models.CharField(max_length=20, null=True, blank=True)
-    created = models.DateTimeField(auto_now_add=True)
-    updated = models.DateTimeField(auto_now=True)
+    created = models.DateTimeField(auto_now_add=True, null=True, blank=True)
+    updated = models.DateTimeField(auto_now=True,null=True, blank=True)
     
     
     class Meta:
