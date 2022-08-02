@@ -1,3 +1,6 @@
 from django.contrib import admin
 
-# Register your models here.
+from todo.models import Tache, Category
+
+admin.site.register(Tache)
+admin.site.register(Category)
